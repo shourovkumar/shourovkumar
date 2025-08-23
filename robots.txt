@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shourovkumar.com/sitemap.xml
