@@ -265,14 +265,19 @@ Specializing in WordPress development, I transform ideas into digital experience
           </div>
         </div>
         <div class="contact-form">
-          <form>
+          
+          <form name="contact" method="POST" data-netlify="true">
+            <!-- Netlify ফর্মের জন্য hidden ইনপুট -->
+            <input type="hidden" name="form-name" value="contact" />
+
+
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Your Name">
+              <input type="text" id="name" class="form-control" placeholder="Your Name" required >
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" class="form-control" placeholder="Your Email">
+              <input type="email" id="email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
@@ -280,7 +285,7 @@ Specializing in WordPress development, I transform ideas into digital experience
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+              <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
@@ -310,7 +315,7 @@ Specializing in WordPress development, I transform ideas into digital experience
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="#contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
